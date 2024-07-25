@@ -1,7 +1,12 @@
-"use client"
+// "use client"
 // import { FadeInForwards, FadeInRight, FadeInLeft } from '@/components/ui/fade-in';
 import PageContainer from '@/components/section/page-container';
+import { Metadata } from "next"
 
+export const metadata: Metadata = {
+    title: 'Projects',
+    description: 'Explore projects to see a glimpse into my progress and demonstrates my ability to tackle coding challenges.',
+}
 const ProjectPage: React.FC = () => {
   return (
     <PageContainer>
