@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "Mubirastudio",
-    description: "A Software Engineer based in Bandung, Indonesia. See for more information about me."
+    description: "A Software Engineer based in Bandung, Indonesia. See more information about me."
   }
 }
 
