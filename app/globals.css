@@ -89,3 +89,15 @@
     border-radius: 14px;
     border: 2px solid var(--primary);
   }
+
+  body {
+    transition-property: opacity, filter, background;
+    transition-timing-function: ease-in-out;
+    transition-duration: 400ms;
+  }
+  
+  .page-transition {
+    opacity: 0;
+    background: black;
+    filter: blur(12px);
+  }
