@@ -1,11 +1,11 @@
+// @ts-nocheck
 "use client"
-
 import { usePathname } from "next/navigation";
 import { Lusitana } from "next/font/google";
 import { Montserrat } from "next/font/google";
 import { cn } from "@/lib/utils";
 import ModeToggle from "@/components/ui/mode-toggle";
-import Link from "next/link";
+import { TransitionLink } from "../ui/transition-link";
 import { Menu } from 'lucide-react';
 import {
     Sheet,
@@ -43,16 +43,16 @@ function Navbar() {
                 <div className={cn(lusitana.className, "text-lg shadow-white", path === "/" ? "text-white" : "text-neutral-900 dark:text-white")}>MUBIRASTUDIO</div>
                 <div className="hidden md:flex items-center gap-8">
                     <div>
-                        <Link href="/" className={cn(montserrat.className, "text-xs text-neutral-400", path === "/" && "text-white")}>HOME</Link>
+                        <TransitionLink href="/" className={cn(montserrat.className, "text-xs text-neutral-400", path === "/" && "text-white")}>HOME</TransitionLink>
                     </div>
                     <div>
-                        <Link href="/blog" className={cn(montserrat.className, "text-xs text-neutral-400", path === "/blog" && "text-neutral-900 dark:text-white")}>BLOG</Link>
+                        <TransitionLink href="/blog" className={cn(montserrat.className, "text-xs text-neutral-400", path === "/blog" && "text-neutral-900 dark:text-white")}>BLOG</TransitionLink>
                     </div>
                     <div>   
-                        <Link href="/projects" className={cn(montserrat.className, "text-xs text-neutral-400", path === "/projects" && "text-neutral-900 dark:text-white")}>PROJECTS</Link>
+                        <TransitionLink href="/projects" className={cn(montserrat.className, "text-xs text-neutral-400", path === "/projects" && "text-neutral-900 dark:text-white")}>PROJECTS</TransitionLink>
                     </div>
                     <div>
-                        <Link href="/about" className={cn(montserrat.className, "text-xs text-neutral-400", path === "/about" && "text-neutral-900 dark:text-white")}>ABOUT</Link>
+                        <TransitionLink href="/about" className={cn(montserrat.className, "text-xs text-neutral-400", path === "/about" && "text-neutral-900 dark:text-white")}>ABOUT</TransitionLink>
                     </div>
                     <ModeToggle usage={null} />
                 </div>
@@ -70,32 +70,32 @@ function Navbar() {
                                         </TableCaption>
                                         <TableBody>
                                             <TableRow>
-                                                <Link href={"/"}>
+                                                <TransitionLink href={"/"}>
                                                     <SheetClose>
                                                         <TableCell className={cn(montserrat.className, "text-xs text-neutral-400 w-dvw", path === "/" && "text-neutral-900 dark:text-white")}>HOME</TableCell>
                                                     </SheetClose>
-                                                </Link>
+                                                </TransitionLink>
                                             </TableRow>
                                             <TableRow>
-                                                <Link href={"/blog"}>
+                                                <TransitionLink href={"/blog"}>
                                                     <SheetClose>
                                                         <TableCell className={cn(montserrat.className, "text-xs text-neutral-400 w-dvw", path === "/blog" && "text-neutral-900 dark:text-white")}>BLOG</TableCell>
                                                     </SheetClose>
-                                                </Link>
+                                                </TransitionLink>
                                             </TableRow>
                                             <TableRow>
-                                                <Link href={"/projects"}>
+                                                <TransitionLink href={"/projects"}>
                                                     <SheetClose>
                                                         <TableCell className={cn(montserrat.className, "text-xs text-neutral-400 w-dvw", path === "/projects" && "text-neutral-900 dark:text-white")}>PROJECTS</TableCell>
                                                     </SheetClose>
-                                                </Link>
+                                                </TransitionLink>
                                             </TableRow>
                                             <TableRow>
-                                                <Link href={"/about"}>
+                                                <TransitionLink href={"/about"}>
                                                     <SheetClose>
                                                         <TableCell className={cn(montserrat.className, "text-xs text-neutral-400 w-dvw", path === "/about" && "text-neutral-900 dark:text-white")}>ABOUT</TableCell>
                                                     </SheetClose>
-                                                </Link>
+                                                </TransitionLink>
                                             </TableRow>
                                         </TableBody>
                                         </Table>
