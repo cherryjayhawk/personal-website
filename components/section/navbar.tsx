@@ -38,7 +38,7 @@ function Navbar() {
 
   return (
     <>
-        <div className="flex justify-center items-center h-16 px-8 2xl:px-2 z-10 fixed w-full">
+        <div className="flex justify-center items-center h-16 px-8 2xl:px-2 z-20 fixed w-full">
             <div className="flex justify-between items-center text-white w-full max-w-7xl mx-auto">
                 <div className={cn(lusitana.className, "text-lg shadow-white", path === "/" ? "text-white" : "text-neutral-900 dark:text-white")}>MUBIRASTUDIO</div>
                 <div className="hidden md:flex items-center gap-8">
@@ -59,7 +59,7 @@ function Navbar() {
                 <div className="md:hidden">
                     <Sheet>
                         <SheetTrigger asChild className="hover:cursor-pointer">
-                            <Menu />
+                            <Menu className={path === '/' ? 'stroke-white' : 'stroke-foreground'} />
                         </SheetTrigger>
                         <SheetContent className="bg-background">
                             <SheetHeader>  
