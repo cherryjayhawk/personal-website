@@ -5,6 +5,7 @@ import { Metadata } from "next"
 import { Expressjs, FastAPI, MongoDB, Nextjs, Sanity, TailwindCSS } from '@/components/ui/svg';
 import Image from 'next/image';
 import agrosmartsystem from '@/public/agrosmartsystem.png'
+import pelayanquran from '@/public/pelayanquran.png'
 
 export const metadata: Metadata = {
     title: 'Projects',
@@ -13,6 +14,33 @@ export const metadata: Metadata = {
 const ProjectPage: React.FC = () => {
   return (
     <PageContainer>
+
+      {/* PELAYANQURAN.ID */}
+      <ProjectSection>
+        <div className='grid grid-cols-1 md:grid-cols-2 min-w-full min-h-dvh'>
+          <div className='flex justify-center items-center w-full p-8'>
+            <FadeInForwards>
+              <Image src={pelayanquran} alt='' />
+            </FadeInForwards>
+          </div>
+          <div className='flex flex-col justify-center min-w-full gap-4 p-8'>
+            <FadeInForwards duration={1.2}>
+              <h1 className='text-2xl font-bold'>PELAYANQURAN.ID</h1>
+            </FadeInForwards>
+            <FadeInRight duration={1.2}>
+              <p>Developed a comprehensive and responsive website for a non-profit organization, designed to enhance their digital presence and streamline operations. This website features an admin dashboard for efficient management, a blog for engaging content sharing, and a payment tracking system to monitor donations and transactions. Additionally, the project involved implementing SEO strategies and ensuring the site's security.</p>
+            </FadeInRight>
+            <FadeInUp duration={1.2}>
+              <div className='flex gap-4'>
+                <Nextjs/>
+                <Sanity/>
+                <Expressjs/>
+                <TailwindCSS/>
+              </div>
+            </FadeInUp>
+          </div>
+        </div>      
+      </ProjectSection>
       
       {/* AGROSMARTSYSTEM.ID */}
       <ProjectSection>
@@ -34,29 +62,6 @@ const ProjectPage: React.FC = () => {
                 <Nextjs/>
                 <TailwindCSS/>
                 <FastAPI/> 
-              </div>
-            </FadeInUp>
-          </div>
-        </div>      
-      </ProjectSection>
-
-      {/* PELAYANQURAN.ID */}
-      <ProjectSection>
-        <div className='grid grid-cols-1 md:grid-cols-2 min-w-full min-h-dvh'>
-          <div className='flex justify-start'></div>
-          <div className='flex flex-col justify-center min-w-full gap-4 p-8'>
-            <FadeInForwards duration={1.2}>
-              <h1 className='text-2xl font-bold'>PELAYANQURAN.ID</h1>
-            </FadeInForwards>
-            <FadeInRight duration={1.2}>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, ullam necessitatibus sit voluptas placeat aliquid ratione deleniti alias laboriosam porro, non molestiae ex soluta ipsum, odit rerum ut molestias beatae.</p>
-            </FadeInRight>
-            <FadeInUp duration={1.2}>
-              <div className='flex gap-4'>
-                <Nextjs/>
-                <Sanity/>
-                <Expressjs/>
-                <TailwindCSS/>
               </div>
             </FadeInUp>
           </div>
