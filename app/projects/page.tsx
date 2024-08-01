@@ -28,7 +28,7 @@ const ProjectPage: React.FC = () => {
               <h1 className='text-2xl font-bold'>PELAYANQURAN.ID</h1>
             </FadeInForwards>
             <FadeInRight duration={1.2}>
-              <p>Developed a comprehensive and responsive website for a non-profit organization, designed to enhance their digital presence and streamline operations. This website features an admin dashboard for efficient management, a blog for engaging content sharing, and a payment tracking system to monitor donations and transactions. Additionally, the project involved implementing SEO strategies and ensuring the site's security.</p>
+              <p>Developed a comprehensive and responsive website for a non-profit organization, designed to enhance their digital presence and streamline operations. This website features an admin dashboard for efficient management, a blog for engaging content sharing, and a payment tracking system to monitor donations and transactions. Additionally, the project involved implementing SEO strategies and ensuring the site&quot;s security.</p>
             </FadeInRight>
             <FadeInUp duration={1.2}>
               <div className='flex gap-4'>
