@@ -25,6 +25,7 @@
     "sharp": "^0.33.4",
     "styled-components": "^6.1.19",
     "tailwind-merge": "^2.4.0",
+    "tailwind-scrollbar-hide": "^4.0.0",
     "tailwindcss-animate": "^1.0.7",
     "vertical-timeline-component-react": "^4.4.3"
   },
