@@ -94,7 +94,7 @@ const config = {
       },
     },
   },
-  plugins: [addVariablesForColors, require("tailwindcss-animate"),
+  plugins: [addVariablesForColors, require("tailwindcss-animate"), require('tailwind-scrollbar-hide'),
     function ({ matchUtilities, theme }: any) {
       matchUtilities(
         {
