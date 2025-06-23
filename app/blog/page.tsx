@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 function BlogPage() {
   return (
     <PageContainer>
-      <BlogSection>Maintenance</BlogSection>
+      <BlogSection>Cooming soon</BlogSection>
     </PageContainer>
   )
 }
