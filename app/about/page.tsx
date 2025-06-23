@@ -13,7 +13,7 @@ function AboutPage() {
       <div className="mt-12 p-8">
         <h2 className="text-xl font-extrabold">About Me</h2>
         <p className="font-light">
-          Hi, I'm Bintang, a passionate Software Engineer based in the vibrant
+          Hi, I&apos;m Bintang, a passionate Software Engineer based in the vibrant
           city of Bandung, Indonesia. I love turning ideas into digital reality
           through clean, efficient code.
         </p>
@@ -23,16 +23,16 @@ function AboutPage() {
           My journey in software development started with curiosity and has
           evolved into a genuine passion for creating meaningful digital
           experiences. I believe that great software is not just about writing
-          code, but about solving real problems and making people's lives
+          code, but about solving real problems and making people&apos;s lives
           easier.
         </p>
         <br />
         <h2 className="text-xl font-extrabold">What I Do</h2>
         <p className="font-light">
-          I specialize in full-stack development, crafting both the frontend
+          I specialize in fullstack development, crafting both the frontend
           experiences that users interact with and the backend systems that
           power them. My approach combines technical expertise with creative
-          problem-solving to deliver solutions that are both functional and
+          problem&minus;solving to deliver solutions that are both functional and
           user-friendly.
         </p>
         <h4 className="text-lg font-semibold pt-2">
@@ -40,9 +40,9 @@ function AboutPage() {
         </h4>
         <ul className="font-light list-disc pl-4">
           <li>
-            Frontend Development (React.js, Next.js, JavaScript, HTML/CSS)
+            Frontend Development &#91;React.js, Next.js, JavaScript, HTML/CSS&#93;
           </li>
-          <li>Backend Development (Node.js, Python, PHP)</li>
+          <li>Backend Development &#91;Node.js, Python, PHP&#93;</li>
           <li>Database Design & Management</li>
           <li>API Development & Integration</li>
         </ul>
@@ -51,38 +51,38 @@ function AboutPage() {
         <p className="font-light">
           I believe in writing code that is not only functional but also
           maintainable and scalable. Clean code is a love letter to the future
-          developer who will work on your project – and that developer might be
+          developer who will work on your project &minus; and that developer might be
           you!
         </p>
         <p className="font-light">
           Every project is an opportunity to learn something new and push the
-          boundaries of what's possible. I'm constantly exploring new
+          boundaries of what&apos;s possible. I&apos;m constantly exploring new
           technologies and methodologies to stay at the forefront of the
-          ever-evolving tech landscape.
+          ever&minus;evolving tech landscape.
         </p>
         <br />
         <h2 className="text-xl font-extrabold">Beyond Code</h2>
         <p className="font-light">
-          When I'm not coding, I enjoy nighttime photography and writing. I'm
+          When I&apos;m not coding, I enjoy nighttime photography and writing. I&apos;m
           drawn to capturing quiet moments in urban spaces—empty streets,
           neon-lit corners, the interplay of light and shadow. Photography helps
           me find beauty in solitude and minimalism. Writing is equally
-          important to me, whether I'm documenting experiences on my blog or
-          crafting short stories. It's where I process thoughts and connect with
+          important to me, whether I&apos;m documenting experiences on my blog or
+          crafting short stories. It&apos;s where I process thoughts and connect with
           others through shared experiences, bridging my technical and creative
           sides.
         </p>
         <br />
-        <h2 className="text-xl font-extrabold">Let's Connect</h2>
+        <h2 className="text-xl font-extrabold">Let&apos;s Connect</h2>
         <p className="font-light">
-          I'm always open to discussing new opportunities, collaborating on
+          I&apos;m always open to discussing new opportunities, collaborating on
           interesting projects, or simply having a chat about technology. Feel
-          free to reach out through any of my social channels. I'd love to hear
+          free to reach out through any of my social channels. I&apos;d love to hear
           from you!
         </p>
         <br />
         <p className="italic font-light">
-          "The best way to predict the future is to create it."
+          &quot;The best way to predict the future is to create it.&quot;
         </p>
       </div>
     </div>
