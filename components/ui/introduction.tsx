@@ -17,12 +17,12 @@ function Introduction() {
   
   return (
     <>
-        <TextGenerateEffect words="Hello everyone! I'm" />
+        <TextGenerateEffect words="Hello everyone! I'm" className="text-sm md:text-base" />
         {
-          time1 ? (<TextGenerateEffect words="Muhammad Bintang Ramadhan" className="text-2xl font-semibold" />) : (<span className="text-2xl font-semibold leading-snug tracking-wide  mt-1 invisible">Muhammad Bintang Ramadhan</span>)
+          time1 ? (<TextGenerateEffect words="Muhammad Bintang Ramadhan" className="text-xl md:text-2xl font-semibold" />) : (<span className="text-xl md:text-2xl font-semibold leading-snug tracking-wide  mt-1 invisible">Muhammad Bintang Ramadhan</span>)
         }
         {
-          time2 ? (<TextGenerateEffect words="A Software Engineer based in Bandung, Indonesia." />) : (<span className="leading-snug tracking-wide  mt-1 invisible">Software Developer based in Bandung, Indonesia.</span>)
+          time2 ? (<TextGenerateEffect words="A Software Engineer based in Bandung, Indonesia." className="text-sm md:text-base" />) : (<span className="text-sm md:text-base leading-snug tracking-wide  mt-1 invisible">Software Developer based in Bandung, Indonesia.</span>)
         }
     </>
   )
