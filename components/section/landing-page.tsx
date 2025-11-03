@@ -3,10 +3,9 @@ import { Spotlight } from "../ui/spotlight";
 import Introduction from "../ui/introduction";
 import SocialMedia from "../ui/social-media";
 import Avatar from "../ui/avatar";
-import RippleButton from "../ui/ripple-button";
+import LandingPageText from "../ui/landing-page-text";
+// import RippleButton from "../ui/ripple-button";
 import Link from "next/link";
-import { LandingPageText } from "../ui/landing-page-text";
-import { FadeInForwards } from "../ui/fade-in";
 
 function LandingPage() {
   return (
@@ -25,9 +24,7 @@ function LandingPage() {
         </div>
       </div>
       <div className="flex gap-4 mt-4 sm:mt-8">
-        <FadeInForwards delay={5}>
-          <LandingPageText />
-        </FadeInForwards>
+        <LandingPageText />
       </div>
       <BackgroundBeams />
     </div>
