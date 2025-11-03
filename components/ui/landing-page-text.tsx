@@ -1,28 +1,34 @@
-// "use client";
-// import { LinkPreview } from "@/components/ui/link-preview";
-import Link from "next/link";
+// @ts-nocheck
+"use client";
+import { cn } from "@/lib/utils";
+import { useEffect, useState } from "react";
+import { TransitionLink } from "./transition-link";
 
-export function LandingPageText() {
+function LandingPageText() {
+  const [show, setShow] = useState(false);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setShow(true);
+    }, 5000);
+  }, []);
   return (
-    <div className="flex justify-center items-start flex-col px-4">
-      <p className="text-neutral-500 dark:text-neutral-400 text-sm md:text-base max-w-3xl  text-left mb-10">
+    <div
+      className={cn(
+        !show
+          ? "flex flex-row opacity-0 z-10"
+          : "flex flex-row items-center gap-4 z-10 opacity-100 transition-opacity duration-1000"
+      )}
+    >
+      <p className="text-neutral-500 dark:text-neutral-400 text-sm md:text-base max-w-3xl text-left mb-10">
         Visit{" "}
-        <Link
-          // url="https://mubirastudio.vercel.app/about"
-          href={"/about"}
-          className="font-bold bg-clip-text text-transparent bg-gradient-to-br from-purple-500 to-pink-500"
-        >
+        <TransitionLink href="/about" className="cursor-pointer font-bold text-white">
           About Me
-        </Link>{" "}
+        </TransitionLink>{" "}
         or{" "}
-        <Link
-          // url="https://mubirastudio.vercel.app/projects"
-          href={"/projects"}
-          className="font-bold bg-clip-text text-transparent bg-gradient-to-br from-purple-500 to-pink-500"
-        >
+        <TransitionLink href="/projects" className="cursor-pointer font-bold text-white">
           My Projects
-        </Link>{" "}
-        to learn more.
+        </TransitionLink>{" "}to learn more.
       </p>
     </div>
   );
