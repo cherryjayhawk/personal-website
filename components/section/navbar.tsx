@@ -4,7 +4,7 @@ import { usePathname } from "next/navigation";
 import { Lusitana } from "next/font/google";
 import { Montserrat } from "next/font/google";
 import { cn } from "@/lib/utils";
-import ModeToggle from "@/components/ui/mode-toggle";
+// import ModeToggle from "@/components/ui/mode-toggle";
 import { TransitionLink } from "../ui/transition-link";
 import { Menu } from "lucide-react";
 import {
@@ -103,7 +103,7 @@ function Navbar() {
                 BLOG
               </TransitionLink>
             </div>
-            <ModeToggle usage={null} />
+            {/* <ModeToggle usage={null} /> */}
           </div>
           <div className="md:hidden">
             <Sheet>
@@ -118,9 +118,9 @@ function Navbar() {
                 <SheetHeader>
                   <SheetDescription asChild className="mt-8">
                     <Table>
-                      <TableCaption>
+                      {/* <TableCaption>
                         <ModeToggle usage={"mobile"} />
-                      </TableCaption>
+                      </TableCaption> */}
                       <TableBody>
                         <TableRow>
                           <TransitionLink href={"/"}>
