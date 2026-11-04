@@ -22,7 +22,7 @@ function Introduction() {
           time1 ? (<TextGenerateEffect words="Muhammad Bintang Ramadhan" className="text-xl md:text-2xl font-semibold" />) : (<span className="text-xl md:text-2xl font-semibold leading-snug tracking-wide  mt-1 invisible">Muhammad Bintang Ramadhan</span>)
         }
         {
-          time2 ? (<TextGenerateEffect words="A Software Engineer based in Bandung, Indonesia." className="text-sm md:text-base" />) : (<span className="text-sm md:text-base leading-snug tracking-wide  mt-1 invisible">Software Developer based in Bandung, Indonesia.</span>)
+          time2 ? (<TextGenerateEffect words="A Software Engineer based in Jakarta, Indonesia." className="text-sm md:text-base" />) : (<span className="text-sm md:text-base leading-snug tracking-wide  mt-1 invisible">Software Developer based in Bandung, Indonesia.</span>)
         }
     </>
   )

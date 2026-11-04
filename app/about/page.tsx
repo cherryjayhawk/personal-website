@@ -1,10 +1,9 @@
-import PageContainer from "@/components/section/page-container";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "About Me",
   description:
-    "Get to know me as a developer who loves building digital experiences.",
+    "Get to know Bintang, a software engineer passionate about building software and exploring technology.",
 };
 
 function AboutPage() {
@@ -13,76 +12,92 @@ function AboutPage() {
       <div className="mt-12 p-8">
         <h2 className="text-xl font-extrabold">About Me</h2>
         <p className="font-light">
-          Hi, I&apos;m Bintang, a passionate Software Engineer based in the vibrant
-          city of Bandung, Indonesia. I love turning ideas into digital reality
-          through clean, efficient code.
+          Hi, I&apos;m Bintang, a Software Engineer from Indonesia with an
+          interest in building software, exploring new technologies, and
+          turning ideas into practical solutions. I enjoy working across
+          different layers of software development, from crafting user
+          interfaces to designing backend systems.
         </p>
+
         <br />
+
         <h2 className="text-xl font-extrabold">My Journey</h2>
         <p className="font-light">
-          My journey in software development started with curiosity and has
-          evolved into a genuine passion for creating meaningful digital
-          experiences. I believe that great software is not just about writing
-          code, but about solving real problems and making people&apos;s lives
-          easier.
+          My journey into software development began with curiosity about how
+          technology works and how it can solve everyday problems. Over time,
+          that curiosity grew into a deeper interest in software engineering,
+          system design, and product development.
         </p>
+        <p className="font-light">
+          Through academic projects, personal experiments, and real-world
+          development, I&apos;ve learned to approach problems from both
+          technical and practical perspectives. I enjoy learning by building,
+          experimenting, and continuously refining the way I develop software.
+        </p>
+
         <br />
+
         <h2 className="text-xl font-extrabold">What I Do</h2>
         <p className="font-light">
-          I specialize in fullstack development, crafting both the frontend
-          experiences that users interact with and the backend systems that
-          power them. My approach combines technical expertise with creative
-          problem&minus;solving to deliver solutions that are both functional and
-          user-friendly.
+          I focus on full-stack development, building web applications and
+          backend systems with an emphasis on maintainability, performance,
+          and scalability. I&apos;m particularly interested in modern web
+          technologies, API design, database architecture, and AI-powered
+          applications.
         </p>
+
         <h4 className="text-lg font-semibold pt-2">
-          My areas of expertise include:
+          My areas of interest include:
         </h4>
         <ul className="font-light list-disc pl-4">
-          <li>
-            Frontend Development &#91;React.js, Next.js, JavaScript, HTML/CSS&#93;
-          </li>
-          <li>Backend Development &#91;Node.js, Python, PHP&#93;</li>
-          <li>Database Design & Management</li>
-          <li>API Development & Integration</li>
+          <li>Frontend Development [React, Next.js, TypeScript]</li>
+          <li>Backend Development [Node.js, Bun, Go]</li>
+          <li>Database Design & Architecture [PostgreSQL]</li>
+          <li>API Development & System Integration</li>
+          <li>AI Integration & Application Development</li>
         </ul>
+
         <br />
+
         <h2 className="text-xl font-extrabold">My Philosophy</h2>
         <p className="font-light">
-          I believe in writing code that is not only functional but also
-          maintainable and scalable. Clean code is a love letter to the future
-          developer who will work on your project &minus; and that developer might be
-          you!
+          I believe good software engineering goes beyond making things work.
+          It&apos;s about understanding the problem, making thoughtful
+          technical decisions, and building solutions that are reliable,
+          maintainable, and adaptable as requirements evolve.
         </p>
         <p className="font-light">
-          Every project is an opportunity to learn something new and push the
-          boundaries of what&apos;s possible. I&apos;m constantly exploring new
-          technologies and methodologies to stay at the forefront of the
-          ever&minus;evolving tech landscape.
+          I value simplicity, continuous learning, and practical problem
+          solving. Rather than following every new trend, I prefer
+          understanding the fundamentals and choosing the right tools for
+          the problem at hand.
         </p>
+
         <br />
-        <h2 className="text-xl font-extrabold">Beyond Code</h2>
+
+        <h2 className="text-xl font-extrabold">Beyond Coding</h2>
         <p className="font-light">
-          When I&apos;m not coding, I enjoy nighttime photography and writing. I&apos;m
-          drawn to capturing quiet moments in urban spaces—empty streets,
-          neon-lit corners, the interplay of light and shadow. Photography helps
-          me find beauty in solitude and minimalism. Writing is equally
-          important to me, whether I&apos;m documenting experiences on my blog or
-          crafting short stories. It&apos;s where I process thoughts and connect with
-          others through shared experiences, bridging my technical and creative
-          sides.
+          Beyond writing code, I enjoy exploring ideas around technology,
+          product development, and entrepreneurship. I&apos;m also interested
+          in game development and experimenting with different approaches to
+          creating interactive digital experiences.
         </p>
+
         <br />
+
         <h2 className="text-xl font-extrabold">Let&apos;s Connect</h2>
         <p className="font-light">
-          I&apos;m always open to discussing new opportunities, collaborating on
-          interesting projects, or simply having a chat about technology. Feel
-          free to reach out through any of my social channels. I&apos;d love to hear
-          from you!
+          I&apos;m always interested in connecting with people, exchanging
+          ideas, and exploring opportunities to build something meaningful
+          together. Whether it&apos;s discussing technology, collaborating on
+          a project, or sharing knowledge, feel free to reach out.
         </p>
+
         <br />
+
         <p className="italic font-light">
-          &quot;The best way to predict the future is to create it.&quot;
+          &quot;Great software starts with understanding the problem, not
+          choosing the technology.&quot;
         </p>
       </div>
     </div>

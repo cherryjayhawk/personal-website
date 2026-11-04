@@ -10,15 +10,18 @@ import ProjectSection from "@/components/section/project-section";
 import { Metadata } from "next";
 import {
   Apollo,
+  Astro,
   Docker,
   Expressjs,
   FastAPI,
   GraphQL,
+  Hono,
   Laravel,
   MongoDB,
   Nextjs,
   PostgreSQL,
   Sanity,
+  Supabase,
   TailwindCSS,
 } from "@/components/ui/svg";
 import Image from "next/image";
@@ -27,6 +30,7 @@ import pelayanquran from "@/public/pelayanquran.png";
 import medistock from "@/public/medistock.png";
 import agrofit from "@/public/agrofit.png";
 import crm from "@/public/crm.png";
+import kiva from "@/public/kiva.png";
 
 export const metadata: Metadata = {
   title: "Projects",
@@ -37,6 +41,47 @@ const ProjectPage: React.FC = () => {
   return (
     <PageContainer className="">
       <div className="snap-y snap-mandatory h-screen w-full overflow-y-scroll overflow-x-hidden scrollbar-hide">
+        {/* Kiva */}
+        <ProjectSection>
+          <div className="grid grid-cols-1 md:grid-cols-2 min-w-full min-h-dvh">
+            <div className="flex flex-col justify-end md:justify-center min-w-full gap-4 px-12 pb-8 md:p-8">
+              <FadeInForwards>
+                <Image src={kiva} alt="" />
+              </FadeInForwards>
+            </div>
+            <div className="flex flex-col justify-start md:justify-center min-w-full gap-4 px-12 md:p-8">
+              <FadeInForwards duration={1.2}>
+                <h1 className="text-xl md:text-2xl font-bold">Kiva AI</h1>
+              </FadeInForwards>
+              <FadeInRight duration={1.2}>
+                <p className="text-sm text-justify md:text-start md:text-base">
+                  An AI-powered Sales Agent platform that helps businesses
+                  convert website visitors into customers through intelligent
+                  conversations. Featuring an embeddable chat widget,
+                  conversational commerce, automated lead management, and
+                  integrated CRM to streamline customer engagement and drive
+                  sales.
+                </p>
+              </FadeInRight>
+              <FadeInUp duration={1.2}>
+                <div className="flex gap-4">
+                  <Nextjs />
+                  <Supabase />
+                  <Astro />
+                  <Hono />
+                </div>
+              </FadeInUp>
+              <FadeInForwards delay={0.8}>
+                <div className="flex gap-4">
+                  <a href="https://widget.kivaai.site/index.html?apiKey=pk_live_46a4b4f18cf6413392ae2aab9bfb1c85&apiBaseUrl=https%3A%2F%2Fapi.kivaai.site" className="underline">
+                    Demo
+                  </a>
+                </div>
+              </FadeInForwards>
+            </div>
+          </div>
+        </ProjectSection>
+
         {/* PELAYANQURAN.ID */}
         <ProjectSection>
           <div className="grid grid-cols-1 md:grid-cols-2 min-w-full min-h-dvh">
