@@ -14,14 +14,19 @@ import {
   Docker,
   Expressjs,
   FastAPI,
+  FFMPEG,
   GraphQL,
   Hono,
   Laravel,
+  MiniO,
   MongoDB,
+  MySQL,
   Nextjs,
   PostgreSQL,
+  Redis,
   Sanity,
   Supabase,
+  Svelte,
   TailwindCSS,
 } from "@/components/ui/svg";
 import Image from "next/image";
@@ -31,6 +36,7 @@ import medistock from "@/public/medistock.png";
 import agrofit from "@/public/agrofit.png";
 import crm from "@/public/crm.png";
 import kiva from "@/public/kiva.png";
+import cast from "@/public/bpsdm.png";
 
 export const metadata: Metadata = {
   title: "Projects",
@@ -46,7 +52,7 @@ const ProjectPage: React.FC = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 min-w-full min-h-dvh">
             <div className="flex flex-col justify-end md:justify-center min-w-full gap-4 px-12 pb-8 md:p-8">
               <FadeInForwards>
-                <Image src={kiva} alt="" />
+                <Image src={kiva} alt="" loading="eager" />
               </FadeInForwards>
             </div>
             <div className="flex flex-col justify-start md:justify-center min-w-full gap-4 px-12 md:p-8">
@@ -69,11 +75,58 @@ const ProjectPage: React.FC = () => {
                   <Supabase />
                   <Astro />
                   <Hono />
+                  <Redis />
                 </div>
               </FadeInUp>
               <FadeInForwards delay={0.8}>
                 <div className="flex gap-4">
-                  <a href="https://widget.kivaai.site/index.html?apiKey=pk_live_46a4b4f18cf6413392ae2aab9bfb1c85&apiBaseUrl=https%3A%2F%2Fapi.kivaai.site" className="underline">
+                  <a
+                    href="https://widget.kivaai.site/index.html?apiKey=pk_live_46a4b4f18cf6413392ae2aab9bfb1c85&apiBaseUrl=https%3A%2F%2Fapi.kivaai.site"
+                    className="underline"
+                  >
+                    Demo
+                  </a>
+                </div>
+              </FadeInForwards>
+            </div>
+          </div>
+        </ProjectSection>
+
+        {/* Videocast */}
+        <ProjectSection>
+          <div className="grid grid-cols-1 md:grid-cols-2 min-w-full min-h-dvh">
+            <div className="flex flex-col justify-end md:justify-center min-w-full gap-4 px-12 pb-8 md:p-8">
+              <FadeInForwards>
+                <Image src={cast} alt="" />
+              </FadeInForwards>
+            </div>
+            <div className="flex flex-col justify-start md:justify-center min-w-full gap-4 px-12 md:p-8">
+              <FadeInForwards duration={1.2}>
+                <h1 className="text-xl md:text-2xl font-bold">BPSDM CAST</h1>
+              </FadeInForwards>
+              <FadeInRight duration={1.2}>
+                <p className="text-sm text-justify md:text-start md:text-base">
+                  A digital video streaming platform designed to centralize and
+                  distribute educational content and institutional broadcasts.
+                  Integrated with SIMPEG Single Sign-On (SSO) for seamless
+                  authentication, it features a comprehensive admin dashboard
+                  for content management, viewership analytics, and reporting.
+                  Built to make institutional learning resources more accessible
+                  while providing actionable insights into platform usage.
+                </p>
+              </FadeInRight>
+              <FadeInUp duration={1.2}>
+                <div className="flex gap-4">
+                  <Svelte />
+                  <MySQL />
+                  <Redis />
+                  <MiniO />
+                  <FFMPEG />
+                </div>
+              </FadeInUp>
+              <FadeInForwards delay={0.8}>
+                <div className="flex gap-4">
+                  <a href="https://videocast.my.id" className="underline">
                     Demo
                   </a>
                 </div>
